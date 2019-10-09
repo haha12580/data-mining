@@ -94,7 +94,8 @@ NMI_6 = metrics.normalized_mutual_info_score(y, y_predict_6)
 homogeneity_6 = metrics.homogeneity_score(y, y_predict_6)
 completeness_6 = metrics.completeness_score(y, y_predict_6)
 
-print('Acc:', acc_1, acc_2, acc_6, acc_3, acc_4, acc_5, acc)
+# print('Acc:', acc_1, acc_2, acc_6, acc_3, acc_4, acc_5, acc)
+# ACC这个指标不适合聚类，有问题
 print('NMI:', NMI_1, NMI_2, NMI_6, NMI_3, NMI_4, NMI_5, NMI)
 print('Homogeneity:', homogeneity_1, homogeneity_2, homogeneity_6, homogeneity_3, homogeneity_4, homogeneity_5,
       homogeneity)
